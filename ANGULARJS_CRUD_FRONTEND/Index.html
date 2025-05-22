@@ -59,7 +59,7 @@
       <td contenteditable>{{user.username}}</td>
       <td>{{user.lastname}}</td>
       <td>{{user.datebirthday | date:'MM/dd/yyyy'}}</td>
-      <td><input type="checkbox" value="{{user.locked}}" ng-true-value="'SI'" ng-false-value="'NO'" disabled>{{user.locked}}</td>
+      <td><input type="checkbox" value="{{user.locked}}" ng-checked="user.locked"></td>
        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenterEdit" ng-click="selectUser(user)">Edit</button></td>
        <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenterDelete" ng-click="selectUser(user)">Delete</button></td>
 		<!--Validación a la tabla si hay Usuarios para mostrar-->
